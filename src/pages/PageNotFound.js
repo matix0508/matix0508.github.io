@@ -13,7 +13,7 @@ export default function PageNotFound(props) {
                         You&#x27;re alone here
                     </h1>
                     <p className="font-extrabold text-8xl my-44 text-white animate-bounce">
-                        404
+                        404 <a href={"/"}>Home</a>
                     </p>
                 </div>
             </div>
