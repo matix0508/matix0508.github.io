@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/MyWebSite/static/css/main.21ece10d.chunk.css",
-    "main.js": "/MyWebSite/static/js/main.0f528e2a.chunk.js",
-    "main.js.map": "/MyWebSite/static/js/main.0f528e2a.chunk.js.map",
-    "runtime-main.js": "/MyWebSite/static/js/runtime-main.ec61d2b5.js",
-    "runtime-main.js.map": "/MyWebSite/static/js/runtime-main.ec61d2b5.js.map",
-    "static/js/2.dd4b3f5c.chunk.js": "/MyWebSite/static/js/2.dd4b3f5c.chunk.js",
-    "static/js/2.dd4b3f5c.chunk.js.map": "/MyWebSite/static/js/2.dd4b3f5c.chunk.js.map",
-    "static/js/3.ae2c7ba6.chunk.js": "/MyWebSite/static/js/3.ae2c7ba6.chunk.js",
-    "static/js/3.ae2c7ba6.chunk.js.map": "/MyWebSite/static/js/3.ae2c7ba6.chunk.js.map",
-    "index.html": "/MyWebSite/index.html",
-    "static/css/main.21ece10d.chunk.css.map": "/MyWebSite/static/css/main.21ece10d.chunk.css.map",
-    "static/js/2.dd4b3f5c.chunk.js.LICENSE.txt": "/MyWebSite/static/js/2.dd4b3f5c.chunk.js.LICENSE.txt"
+    "main.css": "/static/css/main.21ece10d.chunk.css",
+    "main.js": "/static/js/main.cadf491f.chunk.js",
+    "main.js.map": "/static/js/main.cadf491f.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.dec7144a.js",
+    "runtime-main.js.map": "/static/js/runtime-main.dec7144a.js.map",
+    "static/js/2.dd4b3f5c.chunk.js": "/static/js/2.dd4b3f5c.chunk.js",
+    "static/js/2.dd4b3f5c.chunk.js.map": "/static/js/2.dd4b3f5c.chunk.js.map",
+    "static/js/3.ae2c7ba6.chunk.js": "/static/js/3.ae2c7ba6.chunk.js",
+    "static/js/3.ae2c7ba6.chunk.js.map": "/static/js/3.ae2c7ba6.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.21ece10d.chunk.css.map": "/static/css/main.21ece10d.chunk.css.map",
+    "static/js/2.dd4b3f5c.chunk.js.LICENSE.txt": "/static/js/2.dd4b3f5c.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.ec61d2b5.js",
+    "static/js/runtime-main.dec7144a.js",
     "static/js/2.dd4b3f5c.chunk.js",
     "static/css/main.21ece10d.chunk.css",
-    "static/js/main.0f528e2a.chunk.js"
+    "static/js/main.cadf491f.chunk.js"
   ]
 }
