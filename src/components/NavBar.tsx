@@ -1,10 +1,15 @@
 import React, {FC} from "react";
-import DarkModeToggle from "./DarkModeToggle";
+import {DarkModeToggle} from "./DarkModeToggle";
 import {LanguageToggle} from "./LanguageToggle";
 import {IMainThemeProps} from "../Types/IMainThemeProps";
+import "./NavBar.scss"
 
-export const NavBar: FC<IMainThemeProps> = (props) => {
-    const btn = React.createRef<HTMLButtonElement>();
+interface INavBarProps {
+    onClick: () => void
+
+}
+
+export const NavBar: FC<IMainThemeProps & INavBarProps> = (props) => {
     return (
         <div className="flex items-center">
             <nav
@@ -14,11 +19,9 @@ export const NavBar: FC<IMainThemeProps> = (props) => {
                 <DarkModeToggle darkMode={props.darkMode} onSwitchMode={props.onSwitchMode}/>
                 <LanguageToggle lang={props.lang} onSwitchLang={props.onSwitchLang}/>
             </nav>
-            <button ref={btn} className="lg:hidden flex flex-col ml-4">
-                <span className="w-6 h-1 bg-gray-800 dark:bg-white mb-1"/>
-                <span className="w-6 h-1 bg-gray-800 dark:bg-white mb-1"/>
-                <span className="w-6 h-1 bg-gray-800 dark:bg-white mb-1"/>
-            </button>
+            <div onClick={props.onClick} className="menu-btn">
+                <span className="menu-btn__burger"></span>
+            </div>
         </div>
     )
 }
