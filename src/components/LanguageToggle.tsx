@@ -1,8 +1,13 @@
-import React from "react";
+import React, {FC} from "react";
 import {Lang} from "../Types/Lang";
 
 
-export default function LanguageToggle(props) {
+interface ILanguageToggle {
+    onSwitchLang: () => void,
+    lang: Lang
+}
+
+export const LanguageToggle: FC<ILanguageToggle> = (props) => {
     return (
         <button
             onClick={props.onSwitchLang}

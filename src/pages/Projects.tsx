@@ -1,7 +1,11 @@
-import MainTheme from "../components/MainTheme";
-import ComplexList from "../components/ComplexList";
+import {MainTheme} from "../components/MainTheme";
+import ComplexList from "../components/ComplexList/ComplexList";
+import React, {FC} from "react";
+import {IMainThemeProps} from "../Types/IMainThemeProps";
 
-export default function Projects(props) {
+
+
+export const Projects:FC<IMainThemeProps> = (props) => {
     return (
         <MainTheme
             darkMode={props.darkMode}

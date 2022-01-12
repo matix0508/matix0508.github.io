@@ -1,4 +1,10 @@
-export default function Card(props) {
+import React, {FC} from "react"
+
+interface ICardProps {
+    title: string
+}
+
+export const Card:FC<ICardProps> = (props) => {
     return (
         <div
             className="w-full sm:w-1/2 md:w-1/2 lg:w-1/4 px-4 py-4 bg-white mt-6  shadow-lg rounded-lg dark:bg-gray-800">

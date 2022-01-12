@@ -1,8 +1,10 @@
-import MainTheme from "../components/MainTheme";
+import {MainTheme} from "../components/MainTheme";
 import ContactMe from "../components/ContactMe";
 import SocialMedia from "../components/SocialMedia";
+import {IMainThemeProps} from "../Types/IMainThemeProps";
+import React, {FC} from "react";
 
-export default function Contact(props) {
+export const Contact: FC<IMainThemeProps> = (props) => {
     return (
 
         <MainTheme
@@ -11,8 +13,8 @@ export default function Contact(props) {
             lang={props.lang}
             onSwitchLang={props.onSwitchLang}
         >
-            <SocialMedia />
-            <ContactMe />
+            <SocialMedia/>
+            <ContactMe/>
         </MainTheme>
 
     )

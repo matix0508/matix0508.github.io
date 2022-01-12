@@ -1,6 +1,9 @@
-import Card from "./Card";
+import React, {FC} from "react";
 
-export default function Cards(props) {
+import {Card} from "./Card";
+
+
+export const Cards:FC = () => {
     return (
 
         <div className="sm:flex flex-wrap justify-center items-center text-center gap-8">

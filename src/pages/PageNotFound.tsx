@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function PageNotFound(props) {
+export function PageNotFound() {
     return (
 
         <div className="bg-indigo-900 relative overflow-hidden h-screen">

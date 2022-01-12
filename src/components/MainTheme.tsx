@@ -1,12 +1,13 @@
-import React from "react";
-import NavBar from "./NavBar";
-import MyEmail from "./MyEmail";
-import Header from "./Header";
+import React, {FC} from "react";
+import {NavBar} from "./NavBar";
+import {MyEmail} from "./MyEmail";
+import {Header} from "./Header";
 import Invitation from "./Invitation";
-import NavItem from "./NavItem";
+import {NavItem} from "./NavItem";
 import {Lang} from "../Types/Lang";
+import {IMainThemeProps} from "../Types/IMainThemeProps";
 
-export default function MainTheme(props) {
+export const MainTheme: FC<IMainThemeProps> = (props) => {
     return (
         <div className={props.darkMode ? "dark" : "light"}>
             <main className="dark:bg-gray-800 font-mono bg-white relative overflow-hidden h-screen content-center">

@@ -1,7 +1,12 @@
-import React from "react";
+import React, {FC} from "react";
+
+interface IDarkModeToggleProps {
+    onSwitchMode: () => void,
+    darkMode: boolean
+}
 
 
-export default function DarkModeToggle(props) {
+export const DarkModeToggle:FC<IDarkModeToggleProps> = (props) => {
     return (
         <button
             onClick={props.onSwitchMode}

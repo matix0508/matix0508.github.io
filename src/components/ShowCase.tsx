@@ -1,7 +1,11 @@
-import React from "react";
+import React, {FC} from "react";
 import {Lang} from "../Types/Lang";
 
-export default function ShowCase(props) {
+interface IShowCaseProps {
+    lang: Lang
+}
+
+export const ShowCase: FC<IShowCaseProps> = (props) => {
     const mainTextPl = "Strony Internetowe i Aplikacje sieciowe dla Biznesu i nie tylko."
     const mainTextEn = "Business and Private Web Pages, web Applications with complex systems"
     return (

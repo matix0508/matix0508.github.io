@@ -1,10 +1,16 @@
-import MainTheme from "../components/MainTheme";
+import {MainTheme} from "../components/MainTheme";
 import Cards from "../components/Cards";
-import Functionality from "../components/Functionality";
+import React, {FC} from "react";
+import {IMainThemeProps} from "../Types/IMainThemeProps";
 
-export default function Resume(props) {
+export const Resume: FC<IMainThemeProps> = (props) => {
     return (
-        <MainTheme darkMode={props.darkMode} onSwitchMode={props.onSwitchMode}>
+        <MainTheme
+            darkMode={props.darkMode}
+            onSwitchMode={props.onSwitchMode}
+            lang={props.lang}
+            onSwitchLang={props.onSwitchLang}
+        >
             <Cards />
         </MainTheme>
     )

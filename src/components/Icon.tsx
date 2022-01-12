@@ -1,13 +1,17 @@
-export default function Icon(props) {
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import React, {FC} from "react";
+import {IconProp} from "@fortawesome/fontawesome-svg-core";
+
+interface IIconProps {
+    href: string
+    icon: IconProp
+}
+
+export const Icon:FC<IIconProps> = (props) => {
+
     return (
         <a href={props.href || "#"}>
-            <svg width="30" height="30" fill="currentColor"
-                 className="text-xl hover:text-gray-800 dark:hover:text-white transition-colors duration-200"
-                 viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
-                <path
-                    d={props.children}>
-                </path>
-            </svg>
+            <FontAwesomeIcon icon={props.icon} />
         </a>
     )
 }

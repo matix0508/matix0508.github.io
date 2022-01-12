@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function MyEmail(props) {
+export function MyEmail() {
     return (
         <div
             className="uppercase text-gray-800 dark:text-white font-black text-3xl flex items-center">

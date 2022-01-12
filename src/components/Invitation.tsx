@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Invitation(props) {
+export default function Invitation() {
     return (
         <div className="hidden md:block absolute -bottom-32 -left-32 w-96 h-96">
             <div className="absolute text-extrabold text-xl right-12 z-20 text-start top-1/4">

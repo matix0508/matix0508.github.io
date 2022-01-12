@@ -1,8 +1,9 @@
-import React from "react";
-import MainTheme from "../components/MainTheme";
-import ShowCase from "../components/ShowCase";
+import React, {FC} from "react";
+import {MainTheme} from "../components/MainTheme";
+import {ShowCase} from "../components/ShowCase";
+import {IMainThemeProps} from "../Types/IMainThemeProps";
 
-export default function Home(props) {
+export const Home : FC<IMainThemeProps> = (props) => {
     return (
         <MainTheme
             darkMode={props.darkMode}
