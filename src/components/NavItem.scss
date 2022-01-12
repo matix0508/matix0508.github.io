@@ -1,0 +1,26 @@
+@import '../config';
+
+.menu-nav__item {
+
+    transform: translateX(100vw);
+    @include transition-ease;
+
+    &.open {
+      transform: translateX(0);
+    }
+
+    &.active > a {
+      color: $secondary-color;
+    }
+
+  &__link {
+    display: inline-block;
+    font-size: 2rem;
+    text-transform: uppercase;
+    padding: 2rem 0;
+    font-weight: 300;
+    @include transition-ease;
+
+    
+  }
+}
