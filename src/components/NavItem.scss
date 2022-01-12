@@ -1,19 +1,25 @@
 @import '../config';
 
 .menu-nav__item {
+  position: relative;
+    display: flex;
+    
+    justify-content: stretch;
+    align-items: center;
 
-    transform: translateX(100vw);
+    // transform: translateX(100vw);
     @include transition-ease;
 
-    &.open {
-      transform: translateX(0);
-    }
+    // &.open {
+    //   transform: translateX(0);
+    // }
 
     &.active > a {
       color: $secondary-color;
     }
 
   &__link {
+    visibility: hidden;
     display: inline-block;
     font-size: 2rem;
     text-transform: uppercase;
@@ -22,5 +28,22 @@
     @include transition-ease;
 
     
+  }
+
+  &__icon {
+    visibility: visible;
+    cursor: pointer;
+  }
+}
+
+@include media-md {
+  .menu-nav__item__icon {
+    visibility: hidden;
+
+
+  }
+
+  .menu-nav__item__link {
+    visibility: visible;
   }
 }

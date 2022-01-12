@@ -1,0 +1,12 @@
+@import '../config';
+
+.email {
+    visibility: hidden;
+}
+
+@include media-md {
+    .email {
+        visibility: visible;
+    }
+    
+}

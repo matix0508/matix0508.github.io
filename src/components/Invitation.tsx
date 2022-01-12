@@ -10,9 +10,9 @@ export default function Invitation() {
                 <p>
                     Got a project ?
                 </p>
-                <button className="underline">
+                <a href="https://www.facebook.com/matix508" className="underline">
                     Let&#x27;s talk
-                </button>
+                </a>
             </div>
             <svg viewBox="0 0 200 200" className="absolute w-full h-full"
                  xmlns="http://www.w3.org/2000/svg">

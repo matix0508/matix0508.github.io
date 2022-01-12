@@ -13,7 +13,7 @@ import { Contact } from "./pages/Contact";
 import { Projects } from "./pages/Projects";
 import { Lang } from "./Types/Lang";
 import { DarkModeToggle } from "./components/DarkModeToggle";
-import { LanguageToggle } from "./components/LanguageToggle";
+import {faHouseUser, faGraduationCap, faAddressBook, faCode} from '@fortawesome/free-solid-svg-icons'
 
 function otherLang(lang: Lang) {
   return Lang.English === lang ? Lang.Polish : Lang.English;
@@ -33,21 +33,22 @@ export const App: FC = () => {
             lang={lang}
             onSwitchMode={() => setDarkMode(!darkMode)}
             onSwitchLang={() =>
-              setLang(lang === Lang.English ? Lang.Polish : Lang.English)
+              setLang(otherLang(lang))
             }
             onClick={() => setMenuOpened(!menuOpened)}
             open={menuOpened}
           >
-            <NavItem href={"/"} open={menuOpened}>
+            <NavItem href={"/"} open={menuOpened} icon={faHouseUser}>
               {lang === Lang.English ? "Home" : "Strona Główna"}
+          
             </NavItem>
-            <NavItem href={"/resume"} open={menuOpened}>
+            <NavItem href={"/resume"} open={menuOpened} icon={faGraduationCap}>
               {lang === Lang.English ? "Resume" : "Doświadczenie"}
             </NavItem>
-            <NavItem href={"/projects"} open={menuOpened}>
+            <NavItem href={"/projects"} open={menuOpened} icon={faCode}>
               {lang === Lang.English ? "Projects" : "Projekty"}
             </NavItem>
-            <NavItem href={"/contact"} open={menuOpened}>
+            <NavItem href={"/contact"} open={menuOpened} icon={faAddressBook}>
               {lang === Lang.English ? "Contact" : "Kontakt"}
             </NavItem>
           </NavBar>

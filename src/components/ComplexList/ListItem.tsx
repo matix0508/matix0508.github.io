@@ -5,11 +5,13 @@ interface IListItemProps {
   imageURL: string;
   title: string;
   subtitle: string;
+  disable?: boolean
 }
 
 export const ListItem: FC<IListItemProps> = (props) => {
+  const onClick = !!props.disable ? () => alert("Sorry, I can't show you anything interesting about this project. Make sure to ask me in person!") : () => {}
   return (
-    <a href={props.href}>
+    <a href={props.href} onClick={onClick}>
       <li className="border-gray-400 flex flex-row mb-2">
         <div className="transition duration-500 shadow ease-in-out transform hover:-translate-y-1 hover:shadow-lg select-none cursor-pointer bg-white dark:bg-gray-800 rounded-md flex flex-1 items-center p-4">
           <div className="flex flex-col w-10 h-10 justify-center items-center mr-4">

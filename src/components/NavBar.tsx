@@ -1,6 +1,4 @@
 import React, { FC } from "react";
-import { DarkModeToggle } from "./DarkModeToggle";
-import { LanguageToggle } from "./LanguageToggle";
 import { IMainThemeProps } from "../Types/IMainThemeProps";
 import classNames from "classnames";
 import "./NavBar.scss";

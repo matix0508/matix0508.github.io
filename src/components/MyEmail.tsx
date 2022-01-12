@@ -1,9 +1,10 @@
 import React from "react";
+import './MyEmail.scss'
 
 export function MyEmail() {
     return (
         <div
-            className="uppercase text-gray-800 dark:text-white font-black text-3xl flex items-center">
+            className="email uppercase text-gray-800 dark:text-white font-black text-3xl flex items-center">
             <svg width="25" height="25" viewBox="0 0 1792 1792" fill="currentColor"
                  xmlns="http://www.w3.org/2000/svg">
                 <path

@@ -8,7 +8,7 @@ export const ContactMe:FC = () => {
                 <div className="mb-6 text-3xl font-light text-center text-gray-800 dark:text-white">
                     Contact Me !
                 </div>
-                <div className="grid max-w-xl grid-cols-2 gap-4 m-auto">
+                {/* <div className="grid max-w-xl grid-cols-2 gap-4 m-auto">
                     <div className="col-span-2 lg:col-span-1">
                         <div className=" relative ">
                             <input type="text" id="contact-form-name"
@@ -37,7 +37,7 @@ export const ContactMe:FC = () => {
                             Send
                         </button>
                     </div>
-                </div>
+                </div> */}
             </div>
         </form>
 
