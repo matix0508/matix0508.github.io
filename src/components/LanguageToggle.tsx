@@ -1,4 +1,5 @@
 import React from "react";
+import {Lang} from "../Types/Lang";
 
 
 export default function LanguageToggle(props) {
@@ -7,7 +8,7 @@ export default function LanguageToggle(props) {
             onClick={props.onSwitchLang}
             className="text-red-600"
         >
-            {props.lang === "en" ? "Zmień na Język Polski" : "Change To English"}
+            {props.lang === Lang.English ? "Zmień na Język Polski" : "Change To English"}
         </button>
     )
 }

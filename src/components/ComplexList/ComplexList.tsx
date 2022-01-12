@@ -48,7 +48,7 @@ function ListItem(props) {
     )
 }
 
-export default function ComplexList(props) {
+export default function ComplexList() {
     return (
 
         <div className="container flex flex-col mx-auto w-full items-center justify-center">

@@ -1,4 +1,4 @@
-export default function ContactMe(props) {
+export default function ContactMe() {
     return (
 
         <form className="flex w-full space-x-3 content-center m-0">

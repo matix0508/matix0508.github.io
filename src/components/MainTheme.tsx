@@ -4,6 +4,7 @@ import MyEmail from "./MyEmail";
 import Header from "./Header";
 import Invitation from "./Invitation";
 import NavItem from "./NavItem";
+import {Lang} from "../Types/Lang";
 
 export default function MainTheme(props) {
     return (
@@ -18,10 +19,10 @@ export default function MainTheme(props) {
                         onSwitchMode={props.onSwitchMode}
                         onSwitchLang={props.onSwitchLang}
                     >
-                        <NavItem href={"/"}>{props.lang === "en" ? "Home" : "Strona Główna"}</NavItem>
-                        <NavItem href={"/resume"}>{props.lang === "en" ? "Resume" : "Doświadczenie"}</NavItem>
-                        <NavItem href={"/projects"}>{props.lang === "en" ? "Projects" : "Projekty"}</NavItem>
-                        <NavItem href={"/contact"}>{props.lang === "en" ? "Contact" : "Kontakt"}</NavItem>
+                        <NavItem href={"/"}>{props.lang === Lang.English ? "Home" : "Strona Główna"}</NavItem>
+                        <NavItem href={"/resume"}>{props.lang === Lang.English ? "Resume" : "Doświadczenie"}</NavItem>
+                        <NavItem href={"/projects"}>{props.lang === Lang.English ? "Projects" : "Projekty"}</NavItem>
+                        <NavItem href={"/contact"}>{props.lang === Lang.English ? "Contact" : "Kontakt"}</NavItem>
                     </NavBar>
                 </Header>
                 {props.children}

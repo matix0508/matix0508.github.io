@@ -14,7 +14,7 @@ export default function SocialMedia(props) {
                     Mateusz Wlekliński
                 </p>
                 <p className="text-xl text-gray-500 dark:text-gray-200 font-light">
-                    Junior Python Developer
+                    Software Developer
                 </p>
             </div>
             <div className="pt-8 flex border-t border-gray-200 w-44 mx-auto text-gray-500 items-center justify-between">
