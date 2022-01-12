@@ -42,8 +42,20 @@
 
 
   }
+  .menu-nav__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-  .menu-nav__item__link {
-    visibility: visible;
+    &__link {
+      visibility: visible;
+      font-size: 1.5rem;
+      text-transform: uppercase;
+      padding: 2rem 0;
+      font-weight: 300;
+      @include transition-ease;
+    }
   }
+
+  
 }
